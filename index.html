@@ -39,7 +39,7 @@
     <meta name="MobileOptimized" content="width">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel= "icon" href="WSE_LOGO.ico.ico">  
     <!-- Commented out the line to avoid errors if the path is incorrect -->
@@ -143,9 +143,45 @@
         font-size: 1rem;
         margin: 0;
       }
+     .p{
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+     .parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+     .float-left {
+  flex-basis: 50%;
+}
+
+     .float-right {
+  flex-basis: 50%;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* for horizontal alignment on desktop/laptop */
+  align-items: center; /* for vertical alignment on mobile */
+}
+
+.services img {
+  width: 132px; /* set the width of the images */
+  height: 132px; /* set the height of the images */
+  margin: 10px; /* add some margin between the images */
+}
+
+/* Add media queries to adjust the layout for mobile devices */
+@media only screen and (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
     </style>
   </head>
-  <body >
+  <body style ="background-color:#fff;" >
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" >
@@ -219,7 +255,7 @@
       </button>
     </div>
 
-    <div class="statistics" style="background-color: #acbdb1;">
+    <div class="statistics" style="background-color:#c8c9cc;">
       <div class="container">
         <div class="row">
           <div class="col-md-3 stat">
@@ -231,25 +267,43 @@
             <p>Satisfied Clients</p>
           </div>
           <div class="col-md-3 stat">
+            <h3>21000+</h3>
+            <p>Customers Serverd @ Branch</p>
+          </div>
+          <div class="col-md-3 stat">
             <h3>20+</h3>
             <p>Experience</p>
           </div>
-          <div class="col-md-3 stat">
-            <h3>2+</h3>
-            <p>Branches</p>
-          </div>
+         
         </div>
       </div>
     </div>
 <!-- here we start the page in formation-->
-    <h1 style="padding-left: 20px;padding-right: 20px;font-size: 60px;">WAHEEDSONS ENGINEERING</h1>
-    <h2 style="padding-left: 20px;padding-right: 20px; color: black;"><a href="pages/about.html" style="color: black;text-decoration: none;">WHO WE ARE?</a></h2>
-    <p style="padding-left: 20px;padding-right: 20px;">
+    <h1 style="padding-left: 20px;padding-right: 20px;font-size: 50px;">WAHEEDSONS ENGINEERING Pakistan is private engineering corporation.</h1>
+    <p class="p">Established in 2000, Waheedsons Engineering is a Karachi-based company specializing in electrical, automation, and solar solutions. Their team of experienced professionals design, install, and maintain cutting-edge systems to boost efficiency, productivity, and sustainability for businesses.</p>
+    
+    <div class="parent">
+    <div class="float-left">
+    <h2 style="padding-left: 20px;padding-right: 20px;text-align: right; color: black;"><a href="pages/about.html" style="color: black;text-decoration: none;">WHO WE ARE?</a></h2>
+    <p style="padding-left: 20px;padding-right: 20px;text-align: right;">
         WAHEEDSONS ENGINEERING is a leading engineering company in Pakistan, renowned for its expertise and excellence in the industry.<br> We specialize in delivering top-tier renewable energy solutions, and our services extend to electrical and electronic systems, project management, and contract-based service provision. <br>With a commitment to innovation and sustainability, we are dedicated to providing cutting-edge solutions that meet the unique needs of our clients.<br> Our team of highly skilled professionals brings years of experience and a deep understanding of the engineering landscape, ensuring that every project is executed with precision and excellence. Whether it's designing advanced electrical systems, implementing renewable energy projects, or managing complex engineering initiatives,<a href="index.html"> WAHEEDSONS ENGINEERING </a> your trusted partner for reliable, efficient, and forward-thinking engineering solutions.
     </p>
+    </div>
+    <div class="float-right">
+    <h2 style="padding-left: 20px;padding-right: 20px;text-align: left; color: black;"><a href="pages/about.html" style="color: black;text-decoration: none;">OUR MISSIONS</a></h2>
+    <p style="padding-left: 20px;padding-right: 20px;text-align: left;">
+        OUR mission is to be the market leaders in electrical, electronics, and automation technology products by consistently delivering high-quality products and services that meet the evolving needs of our customers. We are committed to driving customer satisfaction and progress, recognizing that our success is deeply tied to the success of our customers and the community at large. By focusing on excellence, innovation, and customer-centricity, we aim to establish ourselves as the go-to partner for our customers, providing them with the solutions they need to achieve their goals and drive growth. Through our efforts, we strive to make a positive impact on the community, fostering economic development, social progress, and environmental sustainability. We will achieve this by continuously investing in our people, processes, and technology, ensuring that our organization remains agile, responsive, and adaptable in a rapidly changing world.
+    </p>
+    
+    </div>
+    </div>
+    
+    <div style = "width:100%;">
     <h2 style="text-align: right;" ><a style="color: black;text-decoration: none;" href="pages/projects.html">OUR PROJECTS</a></h2>
     <p style="text-align: right;">With decades of industry experience, WAHEEDSONS ENGINEERING has established itself as a leader in delivering successful projects across the city.<br> Our team of seasoned professionals has consistently demonstrated expertise in managing and executing a diverse range of projects, from complex engineering solutions to comprehensive infrastructure developments.<br> Over the years, we have built a reputation for excellence by implementing innovative solutions that meet and exceed client expectations. Our track record of success spans various sectors, showcasing our ability to tackle challenging projects with precision and efficiency.<br> Each project we undertake reflects our commitment to quality, reliability, and timely delivery. We pride ourselves on our hands-on approach, ensuring that every project is meticulously planned and executed.<br> By leveraging our extensive experience and technical know-how, we continue to drive progress and achieve outstanding results for our clients. Our extensive portfolio is a testament to our dedication and ability to bring projects to fruition, making a significant impact throughout the city.</p><br>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
+    </div>
+   
+     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card" style="background-color: #c5c9d1;">
           <img src="assets/images/shahbrother56kw.png" class="card-img-top" alt="Shah_brother56kw">
@@ -259,59 +313,39 @@
           </div>
         </div>
       </div>
+
       <div class="col">
         <div class="card" style="background-color: #c5c9d1;">
-          <img src="assets/images/hidayatull_1.png" class="card-img-top" alt="hidayatullah12kw">
-          <div class="card-body">
-            <h5 class="card-title">Mr Hidayatullah</h5>
-            <p class="card-text">This is 12kw Solar system.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="background-color: #c5c9d1;">
-          <img src="assets/images/panel_2.png" class="card-img-top" alt="...">
+          <img src="assets/images/panel_2.png" class="card-img-top" alt="electrical panel">
           <div class="card-body">
             <h5 class="card-title">Private</h5>
-            <p class="card-text">These are VFD Control Panels equipped with extra functionality for safe operations.</p>
+            <p class="card-text">These are VFD Control Panels equipped with extra functionality.</p>
           </div>
         </div>
       </div>
-      
-      <div class="col">
-        <div class="card" style="background-color: #c5c9d1;">
-          <img src="assets/images/panel_3.png" class="card-img-top" alt="DC junction box">
-          <div class="card-body">
-            <h5 class="card-title">DC Junction box</h5>
-            <p class="card-text">This is a Junction box.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card"style="background-color: #c5c9d1;">
-          <img src="assets/images/ali&mubarak ali.png" class="card-img-top" alt="Ali and mubarak 6kw inverter">
-          <div class="card-body">
-            <h5 class="card-title">Mr Mubarak Ali</h5>
-            <p class="card-text">This is 6kw system .</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="background-color: #c5c9d1;">
-          <img src="assets/images/nasir 12kw.png" class="card-img-top" alt="Mr Nasir 12kw ">
-          <div class="card-body">
-            <h5 class="card-title">Mr Nasir Shiekh</h5>
-            <p class="card-text">This is 12kw Solar system </p>
-          </div>
-        </div>
-      </div>
-    </div>
+  
     <br>
-    <h6 style="text-align: center;"><a href="pages/projects.html"> Please come and see more Projects </a></h6>
-<br>
+<div style="width:100%;">
+    <div style="clear: both;"><h6 style="text-align: center;"><a href="pages/projects.html"> Please come and see more Projects </a></h6></div>
+    <br>
+<h2 style="text-align:center;">What We Do?</h2>
+<div class="services">
+  <div>
+  <img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/264/external-Services-web-analytics-and-development-apps-smashingstocks-detailed-outline-smashing-stocks.png" alt="external-Services-web-analytics-and-development-apps-smashingstocks-detailed-outline-smashing-stocks">
+  <h3 style="text-align:center;">SERVICES</h3>
+  </div>
+  <div>
+  <img src="https://img.icons8.com/external-others-phat-plus/256/external-goods-warehouse-outline-others-phat-plus-4.png" alt="external-goods-warehouse-outline-others-phat-plus-4">
+  <h3 style="text-align:center;">STOCKING</h3>
+  </div>
+  <div>
+  <img src="https://img.icons8.com/dotty/240/idea-sharing.png" alt="idea-sharing">
+  <h3 style="text-align:center;">SOLUTIONS</h3>
+  </div>
+</div>
 <!--h2 style="padding-left: 20px;padding-right: 20px;" >OUR ADMINISTRATION & TEAM</h2-->
-
-<h2 style="padding-left: 20px;padding-right: 20px;"><a style="text-decoration: none;font-size: 20px;color: black;" href="#">ABOUT DIRECTOR & COE Mr WAHEED AHMED</a></h3>
+<br>
+<h2 style="padding-left: 20px;padding-right: 20px;">ABOUT DIRECTOR & COE Mr WAHEED AHMED</h2>
 <p style="padding-left:20px ;">Since the inception of WAHEEDSONS ENGINEERING, WAHEED AHMED has been the driving force behind its success. With 35 years of relentless dedication and smart strategies, he has steered the company to new heights.<br> Although he is now more experienced, his passion and commitment remain as strong as ever. His hard work and visionary leadership have been pivotal in shaping the company's achievements and growth.<br> CEO’s goal is to see the company touch the sky and establish a strong presence in the global market with our innovative products and services.<br> Despite the passage of time, his unwavering drive continues to inspire and lead the organization forward.</p>
   <div class="card mb-3" style="max-width: 50%;padding: 20px;background-color: #c5c9d1;">
   <img src="" class="card-img-top" alt="Special guests">
@@ -326,7 +360,7 @@
         <div class="row">
           <div class="col-md-4">
             <h5>About Us</h5>
-            <p>Leading the charge in solar solutions for homes and businesses, specializing in solar systems, industrial automation, EV chargers, and top-tier service excellence, including industrial contract services. Your unwavering partner for sustainable energy solutions.</p>
+            <p>Established in 2000, Waheedsons Engineering is a Karachi-based company specializing in electrical, automation, and solar solutions. Their team of experienced professionals design, install, and maintain cutting-edge systems to boost efficiency, productivity, and sustainability for businesses.</p>
           </div>
           <div class="col-md-4">
             <h5>Quick Links</h5>
@@ -342,13 +376,13 @@
           <div class="col-md-4">
             <h5>Contact Us</h5>
             <p>
-              <i class="bi bi-geo-alt-fill"></i> Hn0 1118,Sec A/3 Saeedabad,Karachi Pakistan<br>
+              <i class="bi bi-geo-alt-fill"></i> Hno 1118,Sec A/3 Saeedabad,Karachi Pakistan<br>
               <i class="bi bi-telephone-fill"></i> +92 3332278859 <br>
               <i class="bi bi-telephone-fill"></i> +92 3138163302<br>
               <i class="bi bi-envelope-fill"></i> <a href="mailto:info@waheeedsonsengineering.com">info@waheeedsonsengineering.com</a>
             </p>
             <div class="social-icons">
-              <a href="https://facebook.com/waheedsonsenginering"><i class="bi bi-facebook"></i></a>
+              <a href="https://facebook.com/waheedsonsenginering"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="#"><i class="bi bi-instagram"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -360,6 +394,7 @@
         </div>
       </div>
     </footer> 
+  </div>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
