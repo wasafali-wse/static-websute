@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Allow: /index.html
+Allow: /pages/projects.html
+Allow: /pages/blogs.html
+Allow: /pages/about.html
+Allow: /pages/services.html
+Allow: /pages/why_us.html
+
+Sitemap: https://waheeedsonsengineering.com/sitemap.xml
